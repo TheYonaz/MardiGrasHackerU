@@ -1,0 +1,140 @@
+.middle{
+    display: flex;
+    flex-direction: column;
+}
+.sponsors-background{
+    height: 100vw;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+    overflow: clip;
+    div{ 
+        height: 110vw;
+        width: 100vw; 
+    }
+    .green-container{
+        background-image:
+         url(https://www.mardigrasneworleans.com/templates/client/imagesNew/xctaGreen.jpg.pagespeed.ic.i3Eh3W2VFn.jpg);
+    }
+    .yellow-container{
+        rotate: -10deg;
+        background-image:
+         url(https://www.mardigrasneworleans.com/templates/client/imagesNew/xctaGold.jpg.pagespeed.ic.1CGLNPuFil.jpg);
+    }
+    .purple-container{
+        rotate: -30deg;
+        background-image:
+         url(https://www.mardigrasneworleans.com/templates/client/imagesNew/xctaPurple.jpg.pagespeed.ic.1X0CuzM3mm.jpg);
+        
+    }
+}
+ .sponsors-container{
+    height: 100vw;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    h1{
+            font-size: 7vw;
+            margin-block: 30px 60px;
+            text-align: center;
+            z-index: 6;
+    } 
+    #sponsors{
+       max-width: 70vw;
+       display: grid;
+       column-gap: 50px;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+       row-gap: 50px;
+       z-index: 6; 
+       img{
+           max-height: 20vw;
+           border-radius: 20px;
+           transition-duration: 0.3s;
+           width: 17vw;
+       }   
+       .grid-cell{
+           height: 23vw;
+           max-width: 20vw;
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+       }
+       .lastTwo{
+           display: flex;
+           grid-column-start: 1 ;
+           grid-column-end: 4;
+           padding-inline: 15%;
+           column-gap:100px;
+       }
+    
+       }
+}   
+
+
+.sponsors-container 
+.grid-cell:hover img{
+    position: relative;
+    top:-82%;
+    transform: rotateY(200deg);
+    z-index: 7;
+    margin-bottom: 3vw;
+    box-shadow: -1px 5px 10px #000000;
+}
+.container{
+    max-height: 450px;
+    max-width: 18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    .card{
+        text-align: center;
+        color: aliceblue;
+        max-width: 100%;
+        opacity: 0;
+        margin-top: 0.2vw;
+        padding-inline: 1vw;
+        border-radius: 20px;
+        transition : 0.3s ease-in-out;
+        transition: 0.1s ease-out;
+        box-shadow:
+        10px 15px 1px rgba(000,000,000,0.5),
+        inset 1px 2px 0px rgba(255,255,255,0.4);
+        text-shadow:
+        1px 1px 2px rgba(000,000,000,0.7),
+        0px 1px 0px rgba(255,255,255,0.4);
+        h2{
+            font-size: 1.5vw;
+        }h3{
+        font-size:1.5vw;
+        }
+    }
+}
+.grid-cell:hover .card{
+    opacity: 1;
+}
+button{
+    @include button();
+}
+.on-spons{
+    position: absolute;
+    transition-duration: 0.5s;
+    color: beige;
+    padding-top: 15vw;
+    font-size: 1.2vw;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000000;
+}
+.grid-cell:hover .on-spons{
+    top:-82%;
+    transform: rotateY(200deg);
+    z-index: 7;
+    margin-bottom: 3vw; 
+}
+button:hover{
+    box-shadow: -2px 2px 10px black;
+}

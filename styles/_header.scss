@@ -1,0 +1,25 @@
+@mixin flex-direction-just-align($direction,$justify,$align) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin ulHeadFoot($gap){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: $gap;
+}
+
+
+header{
+    @include flex-direction-just-align(row,space-between ,center);
+    background-color: #d2d2d2;
+    padding-inline: 50px;
+    border-bottom: black 0.5px solid;
+    ul{
+        @include ulHeadFoot(1vw);
+    }
+}
