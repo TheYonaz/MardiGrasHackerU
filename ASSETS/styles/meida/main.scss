@@ -16,48 +16,54 @@ main {
   .top {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .bigPic {
-      width: 80vw;
+      height: 100vh;
+      max-width: 80vw;
       position: relative;
       display: flex;
       justify-content: center;
-      img{
+      img {
         width: 100%;
       }
     }
   }
 }
-.libraryContainer{
-    display: flex;
-    align-items: center;
-    overflow-x: hidden;
+.libraryContainer {
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
 }
-.picLibrary{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
-    overflow: hidden;
-    img {
-        width: 10vw;
-        margin: 0.8vw;
-      }
+.picLibrary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  overflow: hidden;
+  img {
+    width: 10vw;
+    margin: 0.8vw;
+  }
 }
 .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-    opacity: 0;
-  }
-  .leftBtn, .rightBtn{
-    border: solid black 1px;
-    border-radius: 100%;
-    padding: 5px;
-    font-weight: 900;
-    font-size: 40px;
-    background-color: aliceblue;
-
-  }
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  opacity: 0;
+}
+.leftBtn,
+.rightBtn {
+  border: solid black 1px;
+  border-radius: 100%;
+  padding: 5px;
+  font-weight: 900;
+  font-size: 40px;
+  background-color: aliceblue;
+}
+iframe {
+  margin-block: 10vh;
+}
