@@ -5,15 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./ASSETS/styles/contact us/main.css" />
   </head>
-  <body style="width: 100%; background-color: #f2cc0f">
+  <body>
     <header>
       <ul style="list-style: none; display: flex; gap: 1vh">
-        <li>Home</li>
-        <li>What's New</li>
-        <li>Media</li>
-        <li>Contact</li>
+        <a href="./index.html"><li>Home</li></a>
+        <a href="./about.html"><li>about us</li></a>
+        <a href="./media.html"><li>Media</li></a>
+        <a href="./contactUs.html"><li>Contact</li></a>
       </ul>
-      <img src="images/logo.png.pagespeed.ce.XVHRtKbTfP.png" />
+      <img
+        src="./ASSETS/images/general-cjQAi-2021.02.08.08.09.59-logo2021.png"
+      />
     </header>
+
+    <main>
+      <div class="head">
+        <h1>Ask us about MardiGras</h1>
+      </div>
+      <div class="Form">
+        <form action="faq">
+          <label for="first name">First Name</label>
+          <input
+            type="text"
+            name="firstname"
+            id="Fname"
+            placeholder="First Name..."
+          />
+
+          <label for="Last name">Last Name</label>
+          <input
+            type="text"
+            name="lastname"
+            id="Lname"
+            placeholder="Last Name..."
+          />
+
+          <label for="Email"> Email</label>
+          <input type="text" name="Email" id="Email" placeholder="Email..." />
+
+          <label for="freeText">Ask Us</label>
+          <input
+            type="text"
+            name="FreeText"
+            id="FreeText"
+            placeholder="ask us about..."
+          />
+        </form>
+        <div id="btn">
+          <button id="Submit">Submit</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul style="list-style: none; display: flex; gap: 1vh">
+        <a href="./index.html"><li>Home</li></a>
+        <a href="./about.html"><li>about us</li></a>
+        <a href="./media.html"><li>Media</li></a>
+        <a href="./contactUs.html"><li>Contact</li></a>
+      </ul>
+      <img
+        src="./ASSETS/images/general-cjQAi-2021.02.08.08.09.59-logo2021.png"
+      />
+    </footer>
+  </body>
+</html>

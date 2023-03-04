@@ -31,11 +31,15 @@
 
 
 header{
-    @include flex-direction-just-align(row,space-between ,center);
     background-color: #d2d2d2;
-    padding-inline: 50px;
-    border-bottom: black 0.5px solid;
-    ul{
-        @include ulHeadFoot(1vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10vw;
+    font-size: 5vw;
+    background-color:#9453a6 ;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.45);
+    img{
+        width: 12vw;
     }
 }

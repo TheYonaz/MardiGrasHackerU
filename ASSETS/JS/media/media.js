@@ -1,11 +1,12 @@
-const picLibrary = document.querySelector(".picLibrary");
-const images = picLibrary.querySelectorAll("img");
-const bigPic = document.querySelector(".bigPic");
-const closebtn = document.querySelector(".closebtn");
-const leftBtn = document.querySelector(".leftBtn");
-const rightBtn = document.querySelector(".rightBtn");
+  const picLibrary = document.querySelector(".picLibrary")
+  const main = document.querySelector("main");
+  const images = picLibrary.querySelectorAll("img");
+ const bigPic = document.querySelector(".bigPic");
+ const closebtn = document.querySelector(".closebtn");
+ const leftBtn = document.querySelector(".leftBtn");
+ const rightBtn = document.querySelector(".rightBtn");
 const imagesSrc = [
-  "./ASSETS/images/slider/cayetano-gil-T0tb5Olqkis-unsplash.jpg",
+  //"./ASSETS/images/slider/cayetano-gil-T0tb5Olqkis-unsplash.jpg",
   // "./ASSETS/images/slider/chalo-garcia-WD3MV8Mmr7U-unsplash.jpg",
   "./ASSETS/images/slider/fili-santillan-nE_GZfPPhpQ-unsplash.jpg",
   "./ASSETS/images/slider/johanna-paula-perez-vinluan-p72_Bgx0Dbg-unsplash.jpg",
@@ -21,21 +22,20 @@ const imagesSrc = [
 ];
 // show images on load
 showImg();
-//add src to big pic on change show closebtn
+//add src to big pic on change, show closebtn
 images.forEach((image) =>
   image.addEventListener("click", () => {
-    let src = image["src"];
-    let toAdd = bigPic.querySelector("img");
-    toAdd["src"] = `${src}`;
+    const src = image["src"];
+    bigPic.querySelector("img").src= `${src}`;
     closebtn.style.opacity = "1";
   })
 );
 //close button
 closebtn.addEventListener("click", () => {
-  let toAdd = bigPic.querySelector("#showPic");
-  toAdd["src"] = ``;
+  bigPic.querySelector("img").src= ``;
   closebtn.style.opacity = "0";
 });
+
 // on click change order of array and show the new order
 leftBtn.addEventListener("click", () => {
   endToStart();

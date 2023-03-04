@@ -1,0 +1,94 @@
+header {
+  background-color: #d2d2d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10vw;
+  font-size: 5vw;
+  background-color: #9453a6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+}
+header img {
+  width: 12vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header img {
+  width: 7vw;
+  height: 5vh;
+}
+
+body {
+  background-image: linear-gradient(to left bottom, #8cbf3f, #8cbf3f, #F2CC0F, #9453a6, #9453a6);
+}
+
+h1 {
+  font-size: 8vh;
+  margin-block: 3vh;
+  color: aliceblue;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+}
+main .Form {
+  width: 50vw;
+  border: 1px solid black;
+  padding: 2vw;
+  background-image: linear-gradient(to right top, #8cbf3f, #8cbf3f, #F2CC0F, #9453a6, #9453a6);
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+main .Form form {
+  display: flex;
+  flex-direction: column;
+}
+main .Form form label {
+  font-size: 3vw;
+}
+main .Form form #FreeText {
+  height: 20vh;
+}
+main #btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+}
+main #btn button {
+  padding: 0.5vw;
+  padding-inline: 1.5vw;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+}
+
+input {
+  height: 2vw;
+  border-radius: 0.5vw;
+}
+
+input::-moz-placeholder {
+  font-size: 1.1vw;
+}
+
+input:-ms-input-placeholder {
+  font-size: 1.1vw;
+}
+
+input::placeholder {
+  font-size: 1.1vw;
+}
+
+input[type=text] {
+  font-size: 1.1vw;
+}/*# sourceMappingURL=main.css.map */
