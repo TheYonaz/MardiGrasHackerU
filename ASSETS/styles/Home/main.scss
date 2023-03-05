@@ -108,5 +108,28 @@ button{
             border-radius: 20%;
         }
     }
+    .burger-container{
+      display: block;
+      top:10%;
+      left: 90%;
+      position: relative;
+      #burger{
+        padding: 5px;
+        width: 20vw;
+        position: absolute;
+        background-color: beige;
+        border-radius: 20px;
+      }
+    }
+    .top-nav1{
+      display: none;
+      position: absolute;
+      left: -250%;
+      top: 3vh;
+      li{
+        padding-block: 0.7vh;
+        padding-right: 100px;
+      }
+    }
   }
 

@@ -39,6 +39,54 @@ header img {
   margin-inline: 3vw;
 }
 
+.burger-container {
+  border: 1px solid black;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 900;
+  position: absolute;
+  background-color: antiquewhite;
+  top: 12%;
+  left: 92%;
+  display: none;
+}
+
+nav {
+  max-width: 100%;
+  background: #f2cc0f;
+}
+nav .top-nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 1.1vw;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+}
+nav .top-nav .nav-bar a {
+  border-top: none;
+  display: inline-block;
+  padding: 16px 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-block: 1px solid black;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vw 5vw;
+  width: 5vw;
+  height: 3vw;
+}
+
 #mayor {
   margin-block: 2vh;
   border: 5px solid #f2f2f2;
@@ -57,4 +105,54 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 861px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .onParade, .part1, .part2 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .onParade img, .part1 img, .part2 img {
+    width: 80vw;
+  }
+  .part2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  nav {
+    display: none;
+  }
+  .burger-container {
+    display: block;
+    left: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .burger-container #burger {
+    padding: 5px;
+    width: 6vw;
+    background-color: beige;
+    border-radius: 20px;
+    top: -5px;
+  }
+  .top-nav1 {
+    display: none;
+    top: 3vh;
+  }
+  .top-nav1 li {
+    padding-block: 0.7vh;
+    padding-right: 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    list-style: none;
+  }
 }/*# sourceMappingURL=main.css.map */

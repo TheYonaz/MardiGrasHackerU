@@ -18,9 +18,69 @@ header img {
   box-sizing: border-box;
 }
 
+header {
+  background-color: #d2d2d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10vw;
+  font-size: 5vw;
+  background-color: #9453a6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+}
 header img {
-  width: 7vw;
-  height: 5vh;
+  width: 12vw;
+}
+header h1 {
+  font-size: 2em;
+}
+
+nav {
+  max-width: 100%;
+  background: #f2cc0f;
+}
+nav .top-nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 1.1vw;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+}
+nav .top-nav .nav-bar a {
+  border-top: none;
+  display: inline-block;
+  padding: 16px 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-block: 1px solid black;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vw 5vw;
+  width: 5vw;
+  height: 3vw;
+}
+
+.burger-container {
+  border: 1px solid black;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 900;
+  position: absolute;
+  background-color: antiquewhite;
+  top: 9%;
+  left: 92%;
+  display: none;
 }
 
 body {
@@ -91,4 +151,30 @@ input::placeholder {
 
 input[type=text] {
   font-size: 1.1vw;
+}
+
+@media only screen and (max-width: 861px) {
+  .burger-container {
+    display: block;
+    top: 10%;
+    left: 90%;
+    position: relative;
+  }
+  .burger-container #burger {
+    padding: 5px;
+    width: 20vw;
+    position: absolute;
+    background-color: beige;
+    border-radius: 20px;
+  }
+  .top-nav1 {
+    display: none;
+    position: absolute;
+    left: -250%;
+    top: 3vh;
+  }
+  .top-nav1 li {
+    padding-block: 0.7vh;
+    padding-right: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */

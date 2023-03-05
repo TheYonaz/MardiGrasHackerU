@@ -1,3 +1,4 @@
+
 //button, .card random color
 const buttons = document.querySelectorAll('button')
 function getRandomInt(max) {
@@ -39,4 +40,13 @@ function slide(){
 setInterval(() => slide(), 2000);
 //background move interval
 
+function NavOpen() {
+  var x = document.querySelector(".top-nav1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+document.querySelector('#burger').addEventListener('click',()=> NavOpen())
 
