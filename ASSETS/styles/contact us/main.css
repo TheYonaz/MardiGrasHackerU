@@ -116,9 +116,6 @@ main .Form form {
 main .Form form label {
   font-size: 3vw;
 }
-main .Form form #FreeText {
-  height: 20vh;
-}
 main #btn {
   display: flex;
   justify-content: center;
@@ -135,22 +132,39 @@ main #btn button {
 input {
   height: 2vw;
   border-radius: 0.5vw;
+  overflow-wrap: break-word;
+  width: 46vw;
 }
 
-input::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   font-size: 1.1vw;
 }
 
-input:-ms-input-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 1.1vw;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
   font-size: 1.1vw;
 }
 
-input[type=text] {
-  font-size: 1.1vw;
+input[type=text], textarea[type=text] {
+  font-size: 1.5vw;
+}
+
+#FreeText1 {
+  height: 20vh;
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  -o-border-image: initial;
+     border-image: initial;
+  vertical-align: top;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  border-radius: 0.5vw;
 }
 
 @media only screen and (max-width: 861px) {
@@ -162,7 +176,7 @@ input[type=text] {
   }
   .burger-container #burger {
     padding: 5px;
-    width: 20vw;
+    width: 7vw;
     position: absolute;
     background-color: beige;
     border-radius: 20px;
@@ -177,4 +191,49 @@ input[type=text] {
     padding-block: 0.7vh;
     padding-right: 100px;
   }
+}
+nav {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main h1 {
+  font-size: 2em;
+}
+main .Form {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .Form form {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 90vw;
+  height: 50vh;
+}
+main .Form form label {
+  font-size: 2em;
+}
+main .Form form input {
+  width: 90vw;
+  height: 7vw;
+}
+main .Form #btn {
+  padding-bottom: 8vw;
+}
+main .Form #Submit {
+  font-size: 2em;
+  height: 5vh;
+  width: 30vw;
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */

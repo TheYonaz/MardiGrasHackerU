@@ -31,7 +31,6 @@ nav{
     flex-grow: 1;
     font-size: 1.1vw;
     text-shadow: 1px 1px 4px rgba(0,0,0,.45);
-
     .nav-bar{
          a {
             border-top: none;
@@ -79,7 +78,6 @@ h1{
     font-size: 8vh;
     margin-block: 3vh;
     color: aliceblue;
-
 }
 main{
     display: flex;
@@ -96,13 +94,10 @@ main{
         display: flex;
         flex-direction: column;
         form{
-            
             display: flex;
             flex-direction: column;
             label{
                 font-size:3vw;
-            }#FreeText{
-                height: 20vh;
             }
             
         }
@@ -124,13 +119,28 @@ main{
 input{
     height: 2vw;
     border-radius: 0.5vw;
+    overflow-wrap: break-word;
+    width: 46vw;
 }
-input::placeholder{
+input::placeholder, textarea::placeholder{
     font-size: 1.1vw;
 
 }
-input[type="text"] {
-    font-size:1.1vw;
+input[type="text"],textarea[type="text"] {
+    font-size:1.5vw;
+}
+#FreeText1{
+    height: 20vh;
+    box-sizing: border-box;
+    font-size:1.5vw;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    vertical-align: top;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    border-radius: 0.5vw;
 }
 
 
@@ -142,7 +152,7 @@ input[type="text"] {
     position: relative;
     #burger{
       padding: 5px;
-      width: 20vw;
+      width: 7vw;
       position: absolute;
       background-color: beige;
       border-radius: 20px;
@@ -159,7 +169,47 @@ input[type="text"] {
     }
   }
 }
-
+nav{
+    display:none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 2em;
+    }
+    .Form{
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        form{
+            width: max-content;
+            width: 90vw;
+            height: 50vh;
+            label{
+                font-size: 2em;
+            }
+            input{
+                width: 90vw;
+                height: 7vw;
+            }
+        }
+        #btn{
+            padding-bottom: 8vw;
+        }
+        #Submit{
+            font-size: 2em;
+            height: 5vh;
+            width: 30vw;
+            border-radius: 20px;
+            
+        }
+    }
+}
 
 
 
