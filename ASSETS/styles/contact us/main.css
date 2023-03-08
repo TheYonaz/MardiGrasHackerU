@@ -114,9 +114,6 @@ main input {
 main input::-moz-placeholder, main textarea::-moz-placeholder {
   font-size: 1.1vw;
 }
-main input:-ms-input-placeholder, main textarea:-ms-input-placeholder {
-  font-size: 1.1vw;
-}
 main input::placeholder, main textarea::placeholder {
   font-size: 1.1vw;
 }
@@ -193,7 +190,6 @@ main h1 {
   font-size: 2em;
 }
 main .Form {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   display: flex;
@@ -202,7 +198,6 @@ main .Form {
   justify-content: center;
 }
 main .Form form {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   width: 90vw;

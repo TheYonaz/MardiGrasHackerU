@@ -150,7 +150,6 @@ nav ul li {
   .top-nav1 li {
     padding-block: 0.7vh;
     padding-right: 50px;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     list-style: none;

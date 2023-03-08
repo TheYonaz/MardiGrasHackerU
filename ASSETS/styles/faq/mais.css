@@ -90,22 +90,59 @@ nav ul li {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  position: relative;
 }
 
-.part1Fall, .part2Fall, .part3Fall, .part4Fall {
+.part1Fall,
+.part2Fall,
+.part3Fall,
+.part4Fall {
   display: none;
 }
 
-.part1, .part2, .part3, .part4 {
+.part {
   border: 2px solid black;
   height: 100svh;
   display: flex;
   align-items: center;
+  transition: 1s;
+  position: relative;
+  justify-content: center;
 }
 
 .part1 {
-  transition: 1s;
+  display: flex;
+  justify-content: center;
 }
-.part1 h1 {
-  margin-left: 20%;
+
+.move-right {
+  transform: translateX(95%);
+}
+
+span {
+  position: absolute;
+  left: -8%;
+  font-size: 4vw;
+}
+
+.part1Fall {
+  position: absolute;
+  top: 0%;
+  z-index: auto;
+}
+
+.part2Fall {
+  position: absolute;
+  top: 25%;
+}
+
+.part3Fall {
+  position: absolute;
+  top: 50%;
+}
+
+.part4Fall {
+  position: absolute;
+  top: 75%;
+  z-index: auto;
 }/*# sourceMappingURL=mais.css.map */
