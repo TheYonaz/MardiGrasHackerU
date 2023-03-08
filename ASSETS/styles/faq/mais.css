@@ -1,0 +1,111 @@
+header {
+  background-color: #d2d2d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10vw;
+  font-size: 5vw;
+  background-color: #9453a6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+}
+header img {
+  width: 12vw;
+}
+
+header {
+  background-color: #d2d2d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10vw;
+  font-size: 5vw;
+  background-color: #9453a6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+  position: relative;
+}
+header img {
+  width: 12vw;
+}
+header h1 {
+  font-size: 2em;
+}
+
+nav {
+  max-width: 100%;
+  background: #f2cc0f;
+}
+nav .top-nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 1.1vw;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+}
+nav .top-nav .nav-bar a {
+  border-top: none;
+  display: inline-block;
+  padding: 16px 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-block: 1px solid black;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vw 5vw;
+  width: 5vw;
+  height: 3vw;
+}
+
+.top-nav1, .burger-container {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 7;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70svh;
+}
+
+.accordion {
+  border: 2px black solid;
+  height: 50svh;
+  width: 50svw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.part1Fall, .part2Fall, .part3Fall, .part4Fall {
+  display: none;
+}
+
+.part1, .part2, .part3, .part4 {
+  border: 2px solid black;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+}
+
+.part1 {
+  transition: 1s;
+}
+.part1 h1 {
+  margin-left: 20%;
+}/*# sourceMappingURL=mais.css.map */

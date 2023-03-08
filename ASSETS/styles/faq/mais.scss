@@ -1,0 +1,40 @@
+@forward '../Home/header' ;
+@import'./_header.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 7;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70svh
+}
+.accordion{
+    border: 2px black solid;
+    height: 50svh;
+    width: 50svw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.part1Fall,.part2Fall,.part3Fall,.part4Fall{
+    display: none;
+}
+.part1,.part2,.part3,.part4{
+    border: 2px solid  black;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+}
+.part1{
+    transition: 1s ;
+    h1{
+        margin-left: 20%;
+    }
+    
+}

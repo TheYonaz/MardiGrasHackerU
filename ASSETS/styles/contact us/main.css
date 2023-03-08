@@ -12,12 +12,6 @@ header img {
   width: 12vw;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 header {
   background-color: #d2d2d2;
   display: flex;
@@ -27,6 +21,7 @@ header {
   font-size: 5vw;
   background-color: #9453a6;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+  position: relative;
 }
 header img {
   width: 12vw;
@@ -38,34 +33,6 @@ header h1 {
 nav {
   max-width: 100%;
   background: #f2cc0f;
-}
-nav .top-nav {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  font-size: 1.1vw;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
-}
-nav .top-nav .nav-bar a {
-  border-top: none;
-  display: inline-block;
-  padding: 16px 20px;
-  cursor: pointer;
-  position: relative;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-block: 1px solid black;
-}
-nav ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5vw 5vw;
-  width: 5vw;
-  height: 3vw;
 }
 
 .burger-container {
@@ -83,8 +50,15 @@ nav ul li {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: linear-gradient(to left bottom, #8cbf3f, #8cbf3f, #F2CC0F, #9453a6, #9453a6);
+  overflow: auto;
 }
 
 h1 {
@@ -101,59 +75,56 @@ main {
   color: aliceblue;
 }
 main .Form {
-  width: 50vw;
+  width: 25vw;
+  height: 100vh;
   border: 1px solid black;
   padding: 2vw;
   background-image: linear-gradient(to right top, #8cbf3f, #8cbf3f, #F2CC0F, #9453a6, #9453a6);
   border-radius: 2vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main .Form form {
+  width: 25vw;
   display: flex;
   flex-direction: column;
 }
 main .Form form label {
   font-size: 3vw;
 }
-main #btn {
+main button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 2vw;
-}
-main #btn button {
-  padding: 0.5vw;
+  justify-content: center;
+  padding: 25px;
   padding-inline: 1.5vw;
-  font-size: 1vw;
+  font-size: 5em;
   border-radius: 0.5vw;
+  text-align: center;
+  margin-block: 5vh;
 }
-
-input {
+main input {
   height: 2vw;
   border-radius: 0.5vw;
   overflow-wrap: break-word;
-  width: 46vw;
+  width: 25vw;
 }
-
-input::-moz-placeholder, textarea::-moz-placeholder {
+main input::-moz-placeholder, main textarea::-moz-placeholder {
   font-size: 1.1vw;
 }
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+main input:-ms-input-placeholder, main textarea:-ms-input-placeholder {
   font-size: 1.1vw;
 }
-
-input::placeholder, textarea::placeholder {
+main input::placeholder, main textarea::placeholder {
   font-size: 1.1vw;
 }
-
-input[type=text], textarea[type=text] {
+main input[type=text], main textarea[type=text] {
   font-size: 1.5vw;
 }
-
-#FreeText1 {
-  height: 20vh;
+main textarea {
+  height: 5012vh;
   box-sizing: border-box;
   font-size: 1.5vw;
   border-width: 2px;
@@ -165,6 +136,22 @@ input[type=text], textarea[type=text] {
   line-height: 1.5;
   overflow-wrap: break-word;
   border-radius: 0.5vw;
+  resize: none;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+footer ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vw 5vw;
+  width: 2px;
+  height: 3vw;
 }
 
 @media only screen and (max-width: 861px) {
