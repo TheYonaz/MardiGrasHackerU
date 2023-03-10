@@ -74,3 +74,13 @@ function NavOpen() {
   }
 }
 console.log(document.querySelector('#burger').addEventListener('click',()=> NavOpen()))
+// for phone
+document.querySelector('#phoneSlide').src = imagesSrc[0]
+
+const leftBtn1 = document.querySelector(".leftBtn1");
+const rightBtn1 = document.querySelector(".rightBtn1");
+leftBtn1.addEventListener('click',()=>{ startToEnd()
+document.querySelector('#phoneSlide').src = imagesSrc[0]});
+rightBtn1.addEventListener('click',()=>{ endToStart()
+document.querySelector('#phoneSlide').src = imagesSrc[0]});
+

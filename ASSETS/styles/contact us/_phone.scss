@@ -1,0 +1,61 @@
+@media only screen and (max-width: 861px) {
+    .burger-container{
+        display: block;
+        top:10%;
+        left: 90%;
+        position: relative;
+        #burger{
+          padding: 5px;
+          width: 7vw;
+          position: absolute;
+          background-color: beige;
+          border-radius: 20px;
+        }
+      }
+      .top-nav1{
+        display: none;
+        position: absolute;
+        left: -250%;
+        top: 3vh;
+        li{
+          padding-block: 0.7vh;
+          padding-right: 100px;
+        }
+      }
+    }
+    nav{
+        display:none;
+    }
+    main{
+        h1{
+            font-size: 2em;
+        }
+        .Form{
+            height: 50svh;
+            form{
+                width: max-content;
+                width: 90svw;
+                height: 50svh;
+                label{
+                    font-size: 2em;
+                }
+                input{
+                    width: 55vw;
+                    height: 7vw;
+                }
+            }
+            #btn{
+                padding-bottom: 8vw;
+            }
+            #Submit{
+                font-size: 2em;
+                height: 5vh;
+                width: 30vw;
+                border-radius: 20px;
+                
+            }
+        }
+    }
+    
+    
+    

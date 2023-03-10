@@ -1,71 +1,56 @@
 @forward "../Home/header";
 @import "./_header.scss";
+@import'./_accordion.scss';
+@import'./_phone.scss';
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  z-index: 7;
+  text-decoration: none;
+  a { 
+    color: blue;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70svh;
 }
-.accordion {
-  border: 2px black solid;
-  height: 50svh;
-  width: 50svw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  position: relative;
+body{
+    background-image: linear-gradient(to right bottom, #8cbf3f,#F2CC0F, #9453a6);
+    #head{
+        margin-top: 1svw;
+    }
 }
-.part1Fall,
-.part2Fall,
-.part3Fall,
-.part4Fall {
-  display: none;
-}
+// @media only screen and (max-width: 861px) {
+//     p{
+//         font-size: 3svw;
+//     }
+//     .burger-container{
+//         display: block;
+//         top:10%;
+//         left: 10%;
+//         position: relative;
+//         display: flex;
+//         justify-content: flex-start;
+//         flex-direction: column;
+        
+//         #burger{
+//           padding: 5px;
+//           width: 7vw;
+//           background-color: beige;
+//           border-radius: 20px;
+//         }
+//       }
+//       .top-nav1{
+//         display: none;
+//         li{
+//           padding-block: 0.7vh;
 
-.part {
-  border: 2px solid black;
-  height: 100svh;
-  display: flex;
-  align-items: center;
-  transition: 1s;
-  position: relative;
-  justify-content: center;
-}
-.part1 {
-  display: flex;
-  justify-content: center;
-}
-.move-right {
-  transform: translateX(95%);
-}
-span {
-  position: absolute;
-  left: -8%;
-  font-size: 4vw;
-}
-.part1Fall {
-  position: absolute;
-  top: 0%;
-  z-index: auto;
-}
-.part2Fall {
-  position: absolute;
-  top: 25%;
-}
-.part3Fall {
-  position: absolute;
-  top: 50%;
-}
-.part4Fall {
-  position: absolute;
-  top: 75%;
-  z-index: auto;
-}
+//           list-style: none;
+//           width: 80svw;
+//         }
+//       }
+    
+//     nav{
+//         display:none;
+//     }
+
+// }
+

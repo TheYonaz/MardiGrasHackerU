@@ -1,9 +1,16 @@
 @forward '../Home/header';
-@import './header';
+@import './_header';
+@import'./_phone.scss';
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    a , ul , li{
+        text-decoration: none;
+        list-style: none; 
+          color: blue;
+        
+    }
     
 }
 
@@ -23,7 +30,7 @@ main{
     align-items: center;
     color: aliceblue;
     .Form{
-        width: 25vw;
+        width: 60vw;
         height: 100vh;
         border: 1px solid black;
         padding: 2vw;
@@ -34,7 +41,7 @@ main{
         justify-content: center;
         align-items: center;
         form{
-            width: 25vw;
+            width: 55vw;
             display: flex;
             flex-direction: column;
             label{
@@ -48,9 +55,9 @@ main{
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 25px;
+            padding: 10px;
             padding-inline: 1.5vw;
-            font-size: 5em;
+            font-size: 1em;
             border-radius: 0.5vw;
             text-align: center;
             margin-block: 5vh;
@@ -59,7 +66,7 @@ main{
     height: 2vw;
     border-radius: 0.5vw;
     overflow-wrap: break-word;
-    width: 25vw;
+    width: 55vw;
 }
 input::placeholder, textarea::placeholder{
     font-size: 1.1vw;
@@ -69,7 +76,7 @@ input[type="text"],textarea[type="text"] {
     font-size:1.5vw;
 }
 textarea{
-    height: 5012vh;
+    height: 30vh;
     box-sizing: border-box;
     font-size:1.5vw;
     border-width: 2px;
@@ -100,78 +107,6 @@ footer{
     }
 
 }
-
-
-
-
-@media only screen and (max-width: 861px) {
-.burger-container{
-    display: block;
-    top:10%;
-    left: 90%;
-    position: relative;
-    #burger{
-      padding: 5px;
-      width: 7vw;
-      position: absolute;
-      background-color: beige;
-      border-radius: 20px;
-    }
-  }
-  .top-nav1{
-    display: none;
-    position: absolute;
-    left: -250%;
-    top: 3vh;
-    li{
-      padding-block: 0.7vh;
-      padding-right: 100px;
-    }
-  }
-}
-nav{
-    display:none;
-}
-main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    h1{
-        font-size: 2em;
-    }
-    .Form{
-        width: max-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        form{
-            width: max-content;
-            width: 90vw;
-            height: 50vh;
-            label{
-                font-size: 2em;
-            }
-            input{
-                width: 90vw;
-                height: 7vw;
-            }
-        }
-        #btn{
-            padding-bottom: 8vw;
-        }
-        #Submit{
-            font-size: 2em;
-            height: 5vh;
-            width: 30vw;
-            border-radius: 20px;
-            
-        }
-    }
-}
-
-
 
 
 

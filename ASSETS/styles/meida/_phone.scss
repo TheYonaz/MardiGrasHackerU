@@ -1,0 +1,63 @@
+@media only screen and (max-width: 861px) {
+    .top{
+      display: none !important;
+}
+main{
+  height: 100svh;
+}
+.phoneTop{
+  display: block ;
+  #photo-slide{
+    display: flex;
+    align-items: center;
+    .leftBtn1, .rightBtn1{
+      border: 2px solid black;
+      border-radius: 50%;
+      background-color: aliceblue;
+      margin: 5px;
+    }
+  }
+}
+  .burger-container{
+        display: block;
+        top:10%;
+        left: 10%;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+        #burger{
+          padding: 5px;
+          width: 7vw;
+          background-color: beige;
+          border-radius: 20px;
+        }
+      }
+      .top-nav1{
+        display: none;
+        li{
+          padding-block: 0.7vh;
+          list-style: none;
+          width: 80svw;
+          text-align: center;
+        }
+      }
+    
+    nav{
+        display:none;
+    }
+    .top{
+        display: none;
+    }
+    #phoneSlide{
+      width: 80svw;
+    }
+    h1{
+      margin: 5svw;
+    }
+.youtube{
+  flex-direction: column;
+}
+
+}

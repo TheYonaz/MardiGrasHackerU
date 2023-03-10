@@ -296,32 +296,6 @@ footer {
   padding-block: 1vw;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-* a, * ul, * li {
-  text-decoration: none;
-  list-style: none;
-}
-
-button {
-  border: rgb(255, 254, 254) solid 1px;
-  margin-block: 1vw;
-  padding-inline: 1vw;
-  text-align: center;
-  border-radius: 6px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5), inset 1px 2px 0px rgba(255, 255, 255, 0.4);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.4);
-  color: white;
-  cursor: pointer;
-}
-
-.Phone {
-  display: none;
-}
-
 @media only screen and (max-width: 861px) {
   * {
     margin: 0;
@@ -420,4 +394,30 @@ button {
     padding-block: 0.7vh;
     padding-right: 100px;
   }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* a, * ul, * li {
+  text-decoration: none;
+  list-style: none;
+  color: blue;
+}
+
+button {
+  border: rgb(255, 254, 254) solid 1px;
+  margin-block: 1vw;
+  padding-inline: 1vw;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5), inset 1px 2px 0px rgba(255, 255, 255, 0.4);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.4);
+  color: white;
+  cursor: pointer;
+}
+
+.Phone {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

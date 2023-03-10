@@ -12,11 +12,74 @@ header img {
   width: 12vw;
 }
 
+header {
+  background-color: #d2d2d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10vw;
+  font-size: 5vw;
+  background-color: #9453a6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+  position: relative;
+}
+header img {
+  width: 12vw;
+}
+header h1 {
+  font-size: 2em;
+}
+
+nav {
+  max-width: 100%;
+  background: #f2cc0f;
+}
+nav .top-nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 1.1vw;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+}
+nav .top-nav .nav-bar a {
+  border-top: none;
+  display: inline-block;
+  padding: 16px 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-block: 1px solid black;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vw 5vw;
+  width: 5vw;
+  height: 3vw;
+}
+
+.top-nav1, .burger-container {
+  display: none;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   list-style: none;
+}
+* a, * ul, * li {
+  text-decoration: none;
+  list-style: none;
+  color: blue;
+}
+* .phoneTop {
+  display: none;
 }
 
 body {
@@ -95,6 +158,8 @@ main .top .bigPic img {
 }
 .youtube iframe {
   margin: 10vh;
+  width: 20vw;
+  height: 20vw;
 }
 
 h1 {
@@ -103,4 +168,65 @@ h1 {
 
 footer {
   background-color: #d2d2d2;
+}
+
+@media only screen and (max-width: 861px) {
+  .top {
+    display: none !important;
+  }
+  main {
+    height: 100svh;
+  }
+  .phoneTop {
+    display: block;
+  }
+  .phoneTop #photo-slide {
+    display: flex;
+    align-items: center;
+  }
+  .phoneTop #photo-slide .leftBtn1, .phoneTop #photo-slide .rightBtn1 {
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin: 5px;
+  }
+  .burger-container {
+    display: block;
+    top: 10%;
+    left: 10%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .burger-container #burger {
+    padding: 5px;
+    width: 7vw;
+    background-color: beige;
+    border-radius: 20px;
+  }
+  .top-nav1 {
+    display: none;
+  }
+  .top-nav1 li {
+    padding-block: 0.7vh;
+    list-style: none;
+    width: 80svw;
+    text-align: center;
+  }
+  nav {
+    display: none;
+  }
+  .top {
+    display: none;
+  }
+  #phoneSlide {
+    width: 80svw;
+  }
+  h1 {
+    margin: 5svw;
+  }
+  .youtube {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,35 @@
+@media only screen and (max-width: 861px) {
+    p{
+        font-size: 3svw;
+    }
+    .burger-container{
+        display: block;
+        top:10%;
+        left: 10%;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+        #burger{
+          padding: 5px;
+          width: 7vw;
+          background-color: beige;
+          border-radius: 20px;
+        }
+      }
+      .top-nav1{
+        display: none;
+        li{
+          padding-block: 0.7vh;
+
+          list-style: none;
+          width: 80svw;
+        }
+      }
+    
+    nav{
+        display:none;
+    }
+
+}

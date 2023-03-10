@@ -27,7 +27,19 @@ function showText(name) {
   }
 }
 
-part1.addEventListener("transitionend", () => showText(part1Fall));
+part1.addEventListener("transitionstart", () => showText(part1Fall));
 part2.addEventListener("transitionstart", () => showText(part2Fall));
 part3.addEventListener("transitionstart", () => showText(part3Fall));
 part4.addEventListener("transitionstart", () => showText(part4Fall));
+
+
+//for burger
+function NavOpen() {
+    var x = document.querySelector(".top-nav1");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  document.querySelector('#burger').addEventListener('click',()=> NavOpen())

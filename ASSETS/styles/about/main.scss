@@ -1,10 +1,17 @@
 @forward '../Home/header';
+@import './phone';
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
     z-index: 7;
+    a , ul , li{
+        text-decoration: none;
+        list-style: none; 
+          color: blue;
+        
+    }
     body{
     display:flex ;
     flex-direction: column;
@@ -93,55 +100,5 @@ nav{
     justify-content: center;
 }
 }
-@media only screen and (max-width: 861px) {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .onParade , .part1, .part2{
-        
-        position: relative;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        img{
-            width: 80vw;
-        }
-    }
-    .part2{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    nav{display: none;
-    }
-
-    .burger-container{
-        display: block;
-        left: 90%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        #burger{
-          padding: 5px;
-          width: 6vw;
-          background-color: beige;
-          border-radius: 20px;
-          top: -5px;
-        }
-      }
-      .top-nav1{
-        display: none;
-        top: 3vh;
-        li{
-            padding-block: 0.7vh;
-            padding-right: 50px;
-            width: fit-content;
-            list-style: none;
-        }
-        
-      }
-    }
-    
 
 
