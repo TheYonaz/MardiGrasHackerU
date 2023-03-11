@@ -9,5 +9,15 @@
     #photo-slide img{
         max-height: 40vw;
         width: 100%;
+        position: relative;
+    }
+    span{
+        position: absolute;
+        z-index: 998;
+        left: 10%;
+        top: 100%;
+        color: antiquewhite;
+        font-size: larger;
+        text-shadow: black 1px 1px 5px;
     }
 }

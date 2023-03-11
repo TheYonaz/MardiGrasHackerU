@@ -12,6 +12,12 @@ header img {
   width: 12vw;
 }
 
+* {
+  font-family: "Pattaya";
+  font-family: "Henny Penny";
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   background-color: #d2d2d2;
   display: flex;
@@ -55,12 +61,10 @@ nav {
     display: block;
     top: 10%;
     left: 90%;
-    position: relative;
   }
   .burger-container #burger {
     padding: 5px;
     width: 7vw;
-    position: absolute;
     background-color: beige;
     border-radius: 20px;
   }
@@ -86,7 +90,6 @@ main .Form {
   height: 50svh;
 }
 main .Form form {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   width: 90svw;
@@ -123,6 +126,7 @@ main .Form #Submit {
 body {
   background-image: linear-gradient(to left bottom, #8cbf3f, #8cbf3f, #F2CC0F, #9453a6, #9453a6);
   overflow: auto;
+  height: 100svh;
 }
 
 h1 {
@@ -176,9 +180,6 @@ main input {
   width: 55vw;
 }
 main input::-moz-placeholder, main textarea::-moz-placeholder {
-  font-size: 1.1vw;
-}
-main input:-ms-input-placeholder, main textarea:-ms-input-placeholder {
   font-size: 1.1vw;
 }
 main input::placeholder, main textarea::placeholder {

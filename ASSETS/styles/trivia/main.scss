@@ -1,5 +1,6 @@
 @forward '../font.scss';
 @forward '../meida/header';
+@import './phone.scss';
 * {
   margin: 0px;
   padding: 0px;
@@ -15,7 +16,9 @@
 body{
 
     background-image: linear-gradient(to right bottom, #8cbf3f,#F2CC0F, #9453a6);
-    height: 125svh;
+    height: 155svh;
+    display: flex;
+    flex-direction: column;
 }
 .container {
     margin: auto;

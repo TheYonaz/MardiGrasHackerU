@@ -73,7 +73,9 @@ nav ul li {
 
 body {
   background-image: linear-gradient(to right bottom, #8cbf3f, #F2CC0F, #9453a6);
-  height: 125svh;
+  height: 155svh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {

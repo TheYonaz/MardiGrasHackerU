@@ -1,3 +1,9 @@
+* {
+  font-family: "Pattaya";
+  font-family: "Henny Penny";
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   background-color: #d2d2d2;
   display: flex;
@@ -71,6 +77,16 @@ nav ul li {
 .mid-top #photo-slide img {
   max-height: 40vw;
   width: 100%;
+  position: relative;
+}
+.mid-top span {
+  position: absolute;
+  z-index: 998;
+  left: 10%;
+  top: 100%;
+  color: antiquewhite;
+  font-size: larger;
+  text-shadow: black 1px 1px 5px;
 }
 
 .mayor {
@@ -351,6 +367,7 @@ footer {
     display: block !important;
     font-size: 3vh;
     text-align: center;
+    background-image: linear-gradient(to left bottom, #8cbf3f, #F2CC0F, #9453a6);
   }
   .phone-spons {
     display: flex;
@@ -372,25 +389,35 @@ footer {
   .burger-container {
     display: block;
     top: 10%;
-    left: 90%;
+    left: 10%;
     position: relative;
+    z-index: 999;
+    border: none;
   }
   .burger-container #burger {
-    padding: 5px;
-    width: 20vw;
+    padding: 2vw;
     position: absolute;
     background-color: beige;
     border-radius: 20px;
+    left: 10%;
   }
   .top-nav1 {
     display: none;
     position: absolute;
-    left: -250%;
     top: 3vh;
   }
   .top-nav1 li {
     padding-block: 0.7vh;
     padding-right: 100px;
+  }
+  span {
+    left: 10% !important;
+    top: 18% !important;
+    position: absolute;
+    z-index: 998;
+    color: antiquewhite;
+    font-size: larger;
+    text-shadow: black 1px 1px 5px;
   }
 }
 * {
