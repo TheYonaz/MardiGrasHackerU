@@ -89,7 +89,6 @@ header img {
   background-image: linear-gradient(to left top, #8cbf3f, #F2CC0F, #9453a6);
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 * body main {
   margin-inline: 3vw;
@@ -103,6 +102,10 @@ header img {
   word-spacing: 5px;
   line-height: 4vh;
   margin-inline: 4vw;
+}
+
+.top-nav1 {
+  display: none;
 }
 
 nav {
@@ -147,7 +150,7 @@ nav ul li {
   display: flex;
 }
 .part1 img, .part2 img {
-  max-width: 75vw;
+  max-width: 40vw;
   border-radius: 20vw;
   margin-inline: 1vw;
 }

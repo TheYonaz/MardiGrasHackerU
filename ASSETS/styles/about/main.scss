@@ -19,7 +19,7 @@
     background-image: linear-gradient(to left top, #8cbf3f,#F2CC0F, #9453a6);
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+
     main{
         margin-inline: 3vw;
         width: 80svw;
@@ -36,6 +36,9 @@
         }
     }  
     }    
+}
+.top-nav1{
+    display: none;
 }
 nav{
     max-width: 100%;
@@ -80,7 +83,7 @@ nav{
 .part1, .part2{
     display: flex;
     img{
-    max-width: 75vw;
+    max-width: 40vw;
     border-radius: 20vw;
     margin-inline: 1vw;
     }
