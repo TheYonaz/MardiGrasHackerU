@@ -83,7 +83,7 @@ nav ul li {
 .accordion {
   border: 2px black solid;
   height: 90svh;
-  width: 60svw;
+  width: 70svw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

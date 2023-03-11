@@ -17,12 +17,13 @@
     display:flex ;
     flex-direction: column;
     background-image: linear-gradient(to left top, #8cbf3f,#F2CC0F, #9453a6);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     main{
         margin-inline: 3vw;
-        width: 85svw;
-        #mayor{
-            position: relative;
-        }
+        width: 80svw;
+        
         
         h1{
             font-size:6vh ;
@@ -36,19 +37,6 @@
     }  
     }    
 }
-.burger-container{
-    border: 1px solid black;
-    width: 1vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-weight: 900;
-    background-color: antiquewhite;
-    top:12%;
-    left: 92%;
-    display: none;
-}
 nav{
     max-width: 100%;
     background: #f2cc0f;
@@ -56,7 +44,6 @@ nav{
 .top-nav{
     display: flex;
     justify-content: center;
-    flex-grow: 1;
     font-size: 1.1vw;
     text-shadow: 1px 1px 4px rgba(0,0,0,.45);
 
