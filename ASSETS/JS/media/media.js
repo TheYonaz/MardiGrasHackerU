@@ -5,6 +5,7 @@
  const closebtn = document.querySelector(".closebtn");
  const leftBtn = document.querySelector(".leftBtn");
  const rightBtn = document.querySelector(".rightBtn");
+
 const imagesSrc = [
   //"./ASSETS/images/slider/cayetano-gil-T0tb5Olqkis-unsplash.jpg",
   // "./ASSETS/images/slider/chalo-garcia-WD3MV8Mmr7U-unsplash.jpg",

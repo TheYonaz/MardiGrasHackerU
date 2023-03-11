@@ -1,0 +1,146 @@
+@forward '../font.scss';
+@forward '../meida/header';
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  a , ul , li{
+    text-decoration: none;
+    list-style: none; 
+      color: blue;
+    
+}
+}
+body{
+
+    background-image: linear-gradient(to right bottom, #8cbf3f,#F2CC0F, #9453a6);
+    height: 125svh;
+}
+.container {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    text-decoration: none;
+    color: #9453a6;
+
+  }
+  
+  button {
+    font-size: 5vw;
+    border: rgb(255, 254, 254) solid 1px;
+    margin-block: 1vw;
+    padding-inline: 1vw;
+    text-align: center;    
+    border-radius: 6px;
+    margin: 2vw;
+    padding: 8px 14px;
+    box-shadow:
+    0px 1px 1px rgba(000,000,000,0.5),
+    inset 1px 2px 0px rgba(255,255,255,0.4);
+    text-shadow:
+    1px 1px 2px rgba(000,000,000,0.7),
+    0px 1px 0px rgba(255,255,255,0.4);
+    color:#8cbf3f;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #9453a6;
+  }
+  
+  #submit {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #score {
+    font-size: 20px;
+  }
+  #choices{
+    display: grid;
+    grid-template-rows:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  @media(max-width: 861px) {
+    body{height: 120svh;
+    }
+    .container{
+      width: 90svw;
+    }
+  #choices{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 99svw;
+    ul{
+      li{
+        height: 10vh;
+        font-size: 10rem;
+      }
+    }
+  }
+  .burger-container{
+    display: block;
+    top:10%;
+    left: 10%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+    #burger{
+      padding: 5px;
+      width: 6vw;
+      background-color: beige;
+      border-radius: 20px;
+      top: 50px;
+      left: 92%;
+    }
+  }
+  .top-nav1{
+    display: none;
+    li{
+      padding-block: 0.7vh;
+      list-style: none;
+      width: 80svw;
+      text-align: center;
+    }
+  }
+
+nav{
+    display:none;
+}
+.top{
+    display: none;
+}
+#phoneSlide{
+  width: 80svw;
+}
+h1{
+  margin: 5svw;
+}
+   
+  }
+  

@@ -5,6 +5,7 @@
 @import './middle';
 @import './footer';
 @import'./_phone.scss';
+@forward '../font.scss';
 *{
     padding: 0;
     margin: 0;

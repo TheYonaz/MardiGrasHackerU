@@ -12,20 +12,29 @@ header img {
   width: 12vw;
 }
 
+* {
+  font-family: "Pattaya";
+  font-family: "Henny Penny";
+  font-family: "Roboto", sans-serif;
+}
+
 @media only screen and (max-width: 861px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
   .onParade, .part1, .part2 {
-    position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column;
   }
   .onParade img, .part1 img, .part2 img {
-    width: 80vw;
+    width: 70vw;
   }
   .part2 {
     display: flex;
@@ -35,30 +44,25 @@ header img {
     display: none;
   }
   .burger-container {
-    display: block;
-    left: 90%;
+    display: block !important;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    left: 30px !important;
+    top: 50px;
   }
   .burger-container #burger {
-    padding: 5px;
-    width: 6vw;
+    width: 1vw;
     background-color: beige;
     border-radius: 20px;
-    top: -5px;
   }
   .top-nav1 {
     display: none;
-    top: 3vh;
+    top: 1vh;
   }
   .top-nav1 li {
     padding-block: 0.7vh;
-    padding-right: 50px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 80svw;
     list-style: none;
+    text-align: center;
   }
 }
 * {
@@ -79,9 +83,11 @@ header img {
   background-image: linear-gradient(to left top, #8cbf3f, #F2CC0F, #9453a6);
 }
 * body main {
-  position: relative;
-  z-index: 7;
   margin-inline: 3vw;
+  width: 85svw;
+}
+* body main #mayor {
+  position: relative;
 }
 * body main h1 {
   font-size: 6vh;
@@ -90,7 +96,7 @@ header img {
   font-size: 2.6vh;
   word-spacing: 5px;
   line-height: 4vh;
-  margin-inline: 3vw;
+  margin-inline: 4vw;
 }
 
 .burger-container {
@@ -101,7 +107,6 @@ header img {
   align-items: center;
   border-radius: 50%;
   font-weight: 900;
-  position: absolute;
   background-color: antiquewhite;
   top: 12%;
   left: 92%;
@@ -151,7 +156,7 @@ nav ul li {
   display: flex;
 }
 .part1 img, .part2 img {
-  width: 35vw;
+  max-width: 75vw;
   border-radius: 20vw;
   margin-inline: 1vw;
 }

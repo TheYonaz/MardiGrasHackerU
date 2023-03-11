@@ -348,11 +348,9 @@ footer {
     display: none;
   }
   .Phone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block !important;
     font-size: 3vh;
+    text-align: center;
   }
   .phone-spons {
     display: flex;

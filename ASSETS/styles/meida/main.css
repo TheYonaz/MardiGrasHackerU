@@ -201,9 +201,11 @@ footer {
   }
   .burger-container #burger {
     padding: 5px;
-    width: 7vw;
+    width: 6vw;
     background-color: beige;
     border-radius: 20px;
+    top: 50px;
+    left: 92%;
   }
   .top-nav1 {
     display: none;

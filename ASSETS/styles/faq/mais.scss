@@ -2,6 +2,7 @@
 @import "./_header.scss";
 @import'./_accordion.scss';
 @import'./_phone.scss';
+@forward '../font.scss';
 * {
   margin: 0;
   padding: 0;
