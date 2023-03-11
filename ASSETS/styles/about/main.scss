@@ -1,6 +1,6 @@
 @forward '../Home/header';
 @forward '../font.scss';
-@import './phone';
+@import './_phone.scss';
 *{
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@
 }
 .burger-container{
     border: 1px solid black;
-    width: 5vw;
+    width: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
