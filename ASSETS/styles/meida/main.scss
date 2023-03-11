@@ -1,6 +1,7 @@
 @forward "../Home/_header";
-@import './header';
 @forward '../font.scss';
+@import './header';
+
 
 * {
   margin: 0px;

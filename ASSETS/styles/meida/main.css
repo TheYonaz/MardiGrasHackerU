@@ -12,6 +12,12 @@ header img {
   width: 12vw;
 }
 
+* {
+  font-family: "Pattaya";
+  font-family: "Henny Penny";
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   background-color: #d2d2d2;
   display: flex;
